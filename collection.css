@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+html,body{
+    height: 100%;
+   
+}
+
+.page-wrapper{
+    min-height: 100%;
+  
+}
+
+
+
+.footer{
+    background:#343a40;
+    color:#d3d3d3;
+    height: 400px;
+    position: relative;
+  }
+  .footer .footer-content{
+    display: flex;
+    height: 350px;
+    flex-direction: row;
+   
+  
+  }
+  .footer .footer-content .footer-section{
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+  flex:1;
+    padding:25px;
+  
+  }
+  .footer .footer-bottom{
+    background: #494F55;
+    color:black;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    padding-top: 20px;
+    width: 100%;
+  
+  
+  }
+  .footer .footer-content h1,
+  .footer .footer-content h2{
+    color: white;
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+  }
+  .footer .footer-content .about h1 span{
+    color: #15f4ee;
+  }
+  .footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  
+  }
+  .footer .footer-content .about .socials a{
+    border:1px solid gray;
+    color: #ccc;
+    width: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+  
+  }
+  .footer .footer-content .about .socials a:hover{
+    border: 1px solid white;
+    color:white;
+    transition: all .3s;
+  }
+  .footer .footer-content .links a{
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all .3s;
+  
+  
+  }
+  .footer .footer-content .links a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+  }
+  .footer .footer-content .subscribe .text-input{
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding:.7rem 1.2rem;
+    border :none;
+    width:300px
+  }
+  
+  
+  
+  .btn-5 {
+    background: #21ebff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    width: 100px;
+  }
+  .btn-5:hover{
+    background: transparent;
+    color: #21ebff;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    background: #21ebff;
+    width:0;
+      box-shadow:  0 0 5px #21ebff,  0 0 5px #21ebff inset;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  .popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  .popup-container .popup{
+    background-color: #f0f0f0;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+  }
+  
+  .popup-container .popup h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #30475e;
+  }
+  
+  .popup-container .popup h2 button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: #797775;
+  }
+  
+  .popup-container .popup input{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #30475e;
+    border-radius: 0;
+    padding: 5px 0;
+    font-weight: 550;
+    font-size: 14px;
+    outline: none;
+  }
+  .popup-container .popup button.login-btn,.popup-container .register button.register-btn{
+    font-weight: 550;
+    font-style: 15px;
+    color: white;
+    background-color: #30475e;
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+  }
+  
+  .popup-container .register{
+    background-color: #edeef7;
+  }
+  
+  .popup-container .register h2{
+    color: #fa9579;
+  }
+  
+  .popup-container .register input{
+    border-bottom-color: #fa9579;
+  }
+  
+  .popup-container .register button.register-btn{
+    background-color: #fa9579;
+  }
+  
+  .user{
+    color: #30475e;
+    background-color: #75cfb8;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .user a{
+    color: #30475e;
+  }
+  .poster{
+    position: relative; 
+    height: 48%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/bgcar2.jpg');
+    background-size: cover;
+    flex-direction: column;
+    
+  }
+  .poster::before {    
+    
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.034);
+  
+}
+.poster h1 {
+  position: relative;
+  color: #ffffff;  
+  margin-bottom: 55px;
+  line-height:2;
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgba(0, 162, 255, 0.808),
+    0 0 80px rgb(0, 195, 255),
+    0 0 90px rgb(0, 204, 255),
+    0 0 100px rgb(0, 204, 255),
+    0 0 150px rgb(0, 174, 255);
+  
+
+}
+.poster h2 {
+  position: relative;
+  color: #ffffff;  
+  
+  line-height:0 ;
+  text-align: center;
+ 
+
+}
+.container{
+  margin-top: 110px !important;
+  
+}
+.card{
+  border:none;
+  outline:none;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: transform .3s;
+  box-shadow:0 1.4rem 8rem rgba(0, 0, 0, 0.2) ;
+}
+.card:hover{
+  transform: translateY(-15px);
+  transition: transform .3s;
+}
+.text1{
+  font-size: 13px;
+  color: #141212;
+}
+.info{
+  line-height:17px ;
+}
+.star{
+  color: #fbc02d;
+}
+.cost span{
+  color: #46b4e7;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+.car{
+  background:#46b4e7;
+}
+.car button{
+  color: whitesmoke;
+  text-decoration: none;
+}
